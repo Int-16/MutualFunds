@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-//using MutualFunds.Entities;
+using MutualFunds.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,23 +12,17 @@ namespace MutualFunds.Controllers
     [Route("[controller]")]
     public class MutualFundController : ControllerBase
     {
-        private readonly ILogger<MutualFundController> _logger;
-
-        public MutualFundController(ILogger<MutualFundController> logger)
+        public MutualFundController()
         {
-            _logger = logger;
+            
         }
 
-        //[httpget]
-        //public list<mutualfundentities> get()
+        //Request for MutualFund Scheme Names
+        //[HttpGet]
+        //public List<MutualFundModels> Get()
         //{
 
         //}
-
-
-        //Fund Search services parameters {SchemeCode, SchemeName}
-
-
 
     }
 }
